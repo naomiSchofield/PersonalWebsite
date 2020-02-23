@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inspiration</title>
+
+    <style>
+        .wrapper{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 3% 3% 2fr 2fr ;
+            grid-gap: 2em;
+            justify-items: center;
+            align-items:center;
+        }
+
+        .wrapper > div{
+            background:cadetblue;
+            padding:1em;
+        }
+        .wrapper > div:nth-child(odd){
+            background: chocolate;
+
+        }
+        .nav {
+            grid-column: 1/ span 2;
+            grid-row: 1;
+            justify-self: center;
+            padding: 5em;
+
+        }
+
+        .header {
+            grid-column: 1/ span 2;
+            grid-row: 2;
+        }
+        .imageWrap {
+            position: relative;
+            height: auto;
+            width: auto;
+        }
+        .imageDescription {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: darkslategrey;
+            color:whitesmoke;
+            visibility: hidden;
+            opacity: 0;
+        }
+        .imageWrap:hover .imageDescription {
+            visibility: visible;
+            opacity: .7;
+        }
+
+    </style>
+</head>
+
+
+<body>
+    <div class=wrapper>
+        <div class=nav>
+            <h2>
+                <nav> 
+                    <a href ="./Home.html">Home</a>
+                    <a href ="./Work.html">Work</a>
+                    <a href ="Contact.html">Contact</a>
+                    <a href="Inspiration.html">Inspiration</a>
+                </nav>
+            </h2>
+        </div>
+        <div class=header>
+            <h1> People and Things that Inspire me </h1>
+        </div>
+
+        <div class=imageWrap>
+            <img class= JessJudo src="Jess.png" alt="Jessica in her Judo Gi"/>
+            <p class= imageDescription>Jessica age 4 looking super cute in her first Judo Gi.</p>
+        </div>
+
+        <div class=imageWrap>
+            <img class=BreannaJessica src="breAndJess.png" alt="Breanna and Jessica"/>
+            <p class= imageDescription> Breanna and Jessica infront of the Eiffel Tower</p>
+        </div>
+
+        <div class=imageWrap>
+            <img class=BreannaJessicaInParis src="BreJessParis.png" alt="Breanna and Jessica in Paris"/>
+            <p class= imageDescription> Thomas, Breanna, Jessica and I on a family trip to Paris, it was great going on holiday with my brother.</p>
+        </div>
+
+        <div class=imageWrap>
+            <img class=NicoleandI src="meAndNicole.png" alt="Nicole and I on the flight to Vietnam">
+            <p class= imageDescription> Nicole and I on the flight to Vietnam.</p>
+        </div>
+
+        <div class=imageWrap>
+            <img class=MyMumAndNan src="mumAndNan.png" alt="Mum and Nan together">
+            <p class= imageDescription> My mum and Nan together, their relationship is so lovely.</p>
+        </div>
+
+        <div class=imageWrap>
+            <img class=MyNanTheAlchi src="NanWithDrinks.png" alt="Nan pretending to be an alcoholic"> 
+            <p class= imageDescription> Nan pretending to be an alcoholic</p>
+        </div>
+
+        <div class=imageWrap>
+            <img class=MyDadAndIAtGraduation src="dadAndI.png" alt="Dad and I at graduation"> 
+            <p class= imageDescription> Dad and I at graduation</p>
+        </div>
+
+    </div>
+      
+</body>
+</html>
